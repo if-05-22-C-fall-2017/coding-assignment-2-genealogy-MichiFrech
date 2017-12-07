@@ -1,3 +1,4 @@
+
 parent(adam, john).
 parent(eve, john).
 parent(eve, lisa).
@@ -16,4 +17,4 @@ female(lisa).
 female(anne).
 female(carol).
 
-grandparent(GP, GC) :- parent(C, GC), parent(GP, C).
+grandparent(GP, GC) :- parent(GP, C), parent(C, GC).
